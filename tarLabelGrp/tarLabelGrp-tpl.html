@@ -1,0 +1,28 @@
+
+	 
+<script type="text/x-template" id="tarLabelGrp"> 
+<div class='inj-label-grp'>
+   <div class='inj-label-head'>
+     <el-radio-group v-model="radioValue" size='small'>
+        <el-radio-button label="8000">并且</el-radio-button>
+        <el-radio-button label="9000">或者</el-radio-button>
+      </el-radio-group>
+      <el-input v-if="grp.root=='1'" class='title' placeholder='目标分群名称' size='small'></el-input>
+      <div class='pull-right'>
+        <el-button size='small' type='success' @click='addSingleCondition'>新增条件</el-button>
+        <el-button size='small' type='success' @click='addGrpCondition'>新增组合条件</el-button>
+      </div>
+  </div>
+  <div  class='inj-label-condition' v-for='item in grp.subs'>
+      <div class='inj-label-h-line'></div>
+      <div class='inj-label-block'>
+        <component  v-bind:is="item.type">
+        </component>
+     </div>
+  </div>
+</div>
+</script>
+
+<style>
+
+</style>

@@ -1,0 +1,89 @@
+
+    .inj-label-container{
+    	width:855px;
+    	background-color:#F9FAFC;
+    }
+    .obj-label-template{
+    	margin:20px 0px
+    }
+    .inj-label-grp{
+    	position: relative;
+    	border:1px solid #F7BA2A;
+    	border-radius:10px;
+    	font-size: 0;
+    	padding:20px;
+    }
+    .inj-label-head{
+    }
+    .inj-label-head .title{
+    	width:30%;
+    	vertical-align: bottom;
+    	margin-left:5px
+    }
+    .inj-label-v-line{
+	    width: 2px;
+	    box-sizing: border-box;
+	    bottom: 0;
+	    left: 15px;
+	    border-color: inherit;
+    	background-color: #8492A6;
+	    display: inline-block;
+	    height: 60px;
+	    margin-left: 10px;
+	    vertical-align: bottom;
+    }
+    .inj-label-h-line{
+    	width:20px;
+    	height:2px;
+    	background-color:#8492A6;
+    	display:inline-block;
+    	vertical-align: middle;
+    }
+    .inj-label-condition{
+    	display:inline-block;
+    	position: relative;
+    	width: 100%;
+    	/**border-left: 2px solid #8492A6;**/
+	    margin-left: 10px;
+	    padding-top: 10px;
+	    padding-bottom: 20px;
+    }
+    .inj-label-condition:before{    
+	    content: '';
+	    position: absolute;
+	    width: 2px;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	    background-color: #8492A6;
+    }
+    .inj-label-condition:last-child:before{ 
+	    height: 50%;
+    }
+    
+    .inj-label-block{
+    	display:inline-block;
+    	width: 95%;
+    	position: relative;
+    	vertical-align: middle;
+    }
+    .inj-label-left-param{
+        width:35%;
+    }
+    .inj-label-operate{
+    	width:100px;
+    	margin-left:5px;
+    }
+    .inj-label-right-param{
+        width:35%;
+    	margin-left:5px;
+    }
+    .inj-label-del{
+	    right: 0px;
+	    position: absolute;
+	    top: 0px;
+    }
+    .inj-label-desc{
+    	font-size:12px;
+    }

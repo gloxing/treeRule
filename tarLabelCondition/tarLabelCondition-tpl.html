@@ -1,0 +1,17 @@
+
+	 
+<script type="text/x-template" id="tarLabelCondition"> 
+<div class=''> 
+	<el-input class='inj-label-left-param'  icon="plus" size='small'></el-input>
+	<el-select class='inj-label-operate' v-model="value" placeholder="请选择" size='small'>
+	  <el-option v-for="item in options"  :key="item.value" :label="item.label" :value="item.value">  </el-option>
+	</el-select>
+	<el-input class='inj-label-right-param' size='small'></el-input>
+	<el-button type='warning' class='inj-label-del' size='small'>删除</el-button>
+	<div class='inj-label-desc'>标签描述</div>
+</div>
+</script>
+
+<style>
+
+</style>
